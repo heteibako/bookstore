@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/now-ui-kit.css">
+    <title>Bookself</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row my-4">
+            <div class="col">
+                <h5>Bookself</h5>
+            </div>
+        </div>
+        <form id="bookForm">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="formg-group">
+                        <input type="text" id="bookName" class="form-control" placeholder="Book name"></input>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="formg-group">
+                        <input type="text" id="bookTitle" class="form-control" placeholder="Book title"></input>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="formg-group">
+                        <input type="text" id="bookAuthor" class="form-control" placeholder="Book Author"></input>
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" type="submit">Add new Book</button>
+                </div>
+            </div>
+        </form>
+        <div class="row my-5">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Book name</th>
+                            <th>Book Title</th>
+                            <th>Book Author</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookList">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+
+</html>
