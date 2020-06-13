@@ -14,12 +14,12 @@ class UI {
         <td>${book.name}</td>
         <td>${book.title}</td>
         <td>${book.author}</td>
-        <td> <button class="btn btn-sm btn-danger">x</button></td>
+        <td> <button class="btn btn-sm btn-danger m-0">x</button></td>
         `;
     list.appendChild(row);
   }
   deleteBook(target) {
-    if (target.className === 'btn btn-sm btn-danger') {
+    if (target.className === 'btn btn-sm btn-danger m-0') {
       target.parentElement.parentElement.remove();
     }
   }
